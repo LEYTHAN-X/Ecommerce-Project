@@ -5,12 +5,12 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-  count.toLowerCase();
+  count.toLowerCase();// not a function on number type(typescript error)
 
-  const message: string= 'Hello, World!'
+  const message: string= 'Hello, World!' // typescript infers this as string
   console.log(message)
   message.toLowerCase()
-  message.toFixed();
+  message.toFixed(); // not a function on string type(typescript error)
 
   return (
     <>
